@@ -1,0 +1,17 @@
+.navbar{
+    justify-content: space-between;
+}
+div{
+    padding-right: 1rem
+}
+span{
+    font-size: 20px;
+}
+mat-sidenav{
+    width:250px;
+    padding-top: 0mm;
+}
+.heading{
+    align-items: left;
+    font-size: 25px;
+}

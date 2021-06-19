@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="col-lg-12">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let card of cards" style="padding:2rem">
+
+      <div class="card" style="width:15;">
+        <img class="card-img-top" src="./assets/MahaBharath.jpg" alt="Card image top" style='height:250px;'>
+        <div class="card-body">
+            <h3 class="card-title">{{card.title}}</h3>
+            <h4 class="card-subtitle">{{card.price}}</h4>
+            <button mat-raised-button style='width: 70%;'>Add To Cart</button>
+            <button mat-icon-button *ngIf='true' (click)='opened=!opened'><mat-icon>favorite_border</mat-icon></button>
+            <button mat-icon-button *ngIf='false' (click)='opened=!opened'><mat-icon>favorite</mat-icon></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>

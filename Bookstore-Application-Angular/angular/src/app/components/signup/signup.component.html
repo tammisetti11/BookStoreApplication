@@ -1,0 +1,43 @@
+<div fxLayoutAlign="center center" fxFlexFill style="display: flex;" id="SignUpBox">
+    <mat-card fxFlex="28">
+
+        <div style="text-align: center;">
+            <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="flex-start" style="background-color:rgb(76, 161, 182); padding-top: 16px;">
+                <h2 class="title">NEO Bookstore</h2>
+            </div>
+            <h2>Create NeoBookstore Account</h2>
+        </div>
+        <form action="" fxLayout="column" fxLayoutAlign="start start">
+            
+            <mat-form-field floatlabel="auto" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput id="email" email required type="email" placeholder="Email">
+            </mat-form-field>
+            <br>
+            <mat-form-field floatlabel="auto" appearance="outline">
+                <mat-label>UserName</mat-label>
+                <input matInput id="UserName" required type="text" placeholder="UserName">
+            </mat-form-field>
+            <br>
+            <mat-form-field floatlabel="auto" appearance="outline">
+                <mat-label>Mobile Number </mat-label>
+                <input matInput id="mobileNumber" required type="mobileNumber" placeholder="mobileNumber">
+            </mat-form-field>
+            <br>
+            <mat-form-field floatlabel="auto" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" id="password" placeholder="Enter Password">
+            </mat-form-field>
+            <br>
+            <mat-form-field floatlabel="auto" appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput type="password" id="confirmpassword" placeholder="Re-enter Password">
+            </mat-form-field>
+            <br>
+            <a margin-left="auto" style="color: #cab5b5;" [routerLink]="[ '/login']">Already have an account ?</a>
+            <br>
+            <br>
+            <button id="submit" mat-raised-button type="submit" class='enter'>SignUp</button>
+        </form>
+    </mat-card>
+</div>

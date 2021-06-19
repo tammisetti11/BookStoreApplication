@@ -1,0 +1,35 @@
+
+<div fxLayoutAlign="center center" fxFlexFill style="display: flex;">
+    <mat-card fxFlex="30">
+
+        <div style="text-align: center;">
+            <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="flex-start" style="background-color:rgb(76, 161, 182); padding-top: 16px;">
+                <h2 class="title">NEO Bookstore</h2>
+            </div>
+            <h2>LOGIN</h2>
+            <p>Use your NeoBookstore Account</p>
+        </div>
+        <form action="" fxLayout="column" fxLayoutAlign="start start">
+            
+            <mat-form-field class='flow-control' floatlabel="auto" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput id="email" email required type="email" placeholder="Email/UserName">
+            </mat-form-field>
+            <br>
+            <mat-form-field class='flow-control' floatlabel="auto" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" id="password" placeholder="Password">
+            </mat-form-field>
+            <br>
+            <p>Login as:</p>
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">User</mat-radio-button>
+                <mat-radio-button value="2">Admin</mat-radio-button>
+              </mat-radio-group><br>
+            <a  style="color: #b7ddf3;align-items:right;" [routerLink]="[ '/signup']">Are you new User ?</a>
+            <br>
+            <br>
+            <button id="submit" mat-raised-button type="submit" class='login' (click)='actionHome()'>Login</button>
+        </form>
+    </mat-card>
+</div>

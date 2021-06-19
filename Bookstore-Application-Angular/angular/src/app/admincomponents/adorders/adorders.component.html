@@ -1,0 +1,23 @@
+<app-adheader></app-adheader>
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Order Id</th>
+            <th scope="col">User Id</th>
+            <th scope="col">Produst Name</th>
+            <th scope='col'>Price</th>
+            <th scope='col'>Quantity</th>
+          </tr>
+        </thead>
+        <tbody *ngFor='let card of cards'>
+          <tr>
+            <th scope="row">{{card.orderid}}</th>
+            <td>{{card.userid}}</td>
+            <td>{{card.title}}</td>
+            <td>{{card.price}}</td>
+            <td>Quantity</td> 
+          </tr>
+        </tbody>
+      </table>
+<app-footer></app-footer>

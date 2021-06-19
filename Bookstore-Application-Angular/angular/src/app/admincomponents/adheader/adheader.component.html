@@ -1,0 +1,26 @@
+<mat-sidenav-container>
+    <mat-sidenav  [(opened)]='opened' fixedInViewport='true'>
+        <mat-toolbar color='primary'>Hello,Sai</mat-toolbar>
+            <mat-nav-list>
+                <a mat-list-item href='#'>Account</a>
+                <a mat-list-item >Myorders</a>
+                <a mat-list-item hrrf='#'>Sort</a>
+            </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class='sidenav'>
+        <mat-toolbar color='primary' class='navbar'>
+            <button (click)='opened=!opened' mat-button><mat-icon>menu</mat-icon></button>
+           <div class='heading'><button mat-button (click)='actionhome()' style='font-size: 2vw;'>NEO-BOOKSTORE</button></div>
+            <div>
+                <button mat-button (click)="actionaddProducts()"><span>AddProducts</span></button>
+                <button mat-button (click)="actionadOrders()"><span>Orders</span></button>
+                <mat-menu #appmenu='matMenu'>
+                    <button mat-menu-item>Profile</button>
+                    <button mat-menu-item>Settings</button>
+                    <button mat-menu-item (click)='actionlogin()'>Logout</button>
+                </mat-menu>
+                <button mat-button><span [matMenuTriggerFor]='appmenu'><mat-icon>account_circle</mat-icon></span></button>
+            </div>
+        </mat-toolbar>
+    </mat-sidenav-content>
+</mat-sidenav-container>

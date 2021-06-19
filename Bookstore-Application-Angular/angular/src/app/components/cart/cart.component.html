@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Books</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope='col'>Quantity</th>
+            <th scope='col'>Status</th>
+          </tr>
+        </thead>
+        <tbody *ngFor='let card of cards'>
+          <tr>
+            <th scope="row"><img class="card-img-left" src="./assets/MahaBharath.jpg" alt="Card image left" style='height:100px;'></th>
+            <td>{{card.title}}</td>
+            <td>{{card.price}}</td>
+            <td><input type='number' style="width=100%"></td>
+            <td>In Stock</td>
+          </tr>
+        </tbody>
+      </table>
+<app-footer></app-footer>
